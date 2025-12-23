@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --pink-primary: #FF6B9D;
+  --pink-light: #FF8EAD;
+  --pink-lighter: #FFABC7;
+  --pink-soft: #FFC4D6;
+  --pink-softest: #FFF5F7;
+  --success: #06D6A0;
+  --warning: #FFD166;
+  --danger: #EF476F;
+  --dark: #333333;
+  --gray: #666666;
+  --light-gray: #F5F5F5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink-softest);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-primary);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(255, 107, 157, 0.3);
+  color: var(--dark);
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid var(--pink-primary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth Transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Remove button default styles */
+button {
+  font-family: inherit;
+}
